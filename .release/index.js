@@ -1,14 +1,14 @@
-module.exports = {
+import changelog from './changelog.js';
+import commitAnalyzer from './commit-analyzer.js';
+import git from './git.js';
+import github from './github.js';
+import npmPublish from './npm-publish.js';
+import releaseNotes from './release-notes.js';
+
+export default {
   branches: [
     { name: 'master', prerelease: false },
     { name: 'next', prerelease: true },
   ],
-  plugins: [
-    require('./commit-analyzer'),
-    require('./release-notes'),
-    require('./changelog'),
-    require('./npm-publish'),
-    require('./git'),
-    require('./github'),
-  ],
+  plugins: [commitAnalyzer, releaseNotes, changelog, npmPublish, git, github],
 };

@@ -1,0 +1,113 @@
+{
+  "$schema": "http://json.schemastore.org/package.json",
+  "name": "@no-esm/lint-config",
+  "version": "1.0.0",
+  "description": "Reusable eslint config with sane settings.",
+  "keywords": [
+    "eslint",
+    "eslint-config",
+    "typescript",
+    "prettier",
+    "config"
+  ],
+  "homepage": "https://github.com/SkeLLLa/eslint-config/blob/master/README.md",
+  "bugs": {
+    "url": "https://github.com/SkeLLLa/eslint-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SkeLLLa/eslint-config.git"
+  },
+  "license": "MIT",
+  "author": "SkeLLLa",
+  "type": "module",
+  "exports": {
+    ".": "./configs/eslint.js",
+    "./eslint": "./configs/eslint.js",
+    "./prettier": "./configs/prettier.js"
+  },
+  "main": "configs/eslint.js",
+  "directories": {
+    "lib": "src",
+    "doc": "docs",
+    "example": "examples",
+    "test": "test"
+  },
+  "files": [
+    "prettier.js",
+    "configs/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "pnpm run build:format",
+    "build:clean": "echo 'No build artifacts to clean'",
+    "build:format": "pretty-quick",
+    "lint": "pnpm run lint:codestyle && pnpm run lint:packages",
+    "lint:codestyle": "eslint .",
+    "lint:packages": "pnpm audit --prod --audit-level=high",
+    "release": "semantic-release",
+    "test": "pnpm run lint && pnpm run test:unit",
+    "test:unit": "node --no-warnings --import tsx --experimental-test-coverage --test-reporter=lcov --test-reporter-destination=lcov.info --test test/** --test-coverage-exclude=test/**",
+    "test:unit:local": "node --no-warnings --import tsx --test test/**"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.38.0",
+    "@typescript-eslint/utils": "^8.46.1",
+    "eslint-plugin-import-x": "^4.16.1",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-tsdoc": "^0.4.0",
+    "globals": "^16.4.0",
+    "typescript-eslint": "^8.46.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@ianvs/prettier-plugin-sort-imports": "4.7.0",
+    "@microsoft/api-documenter": "^7.27.1",
+    "@microsoft/api-extractor": "^7.53.1",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/exec": "^7.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^12.0.0",
+    "@semantic-release/npm": "^13.1.1",
+    "@semantic-release/release-notes-generator": "^14.1.0",
+    "@tsconfig/node-lts": "^22.0.2",
+    "@tsconfig/strictest": "^2.0.6",
+    "@types/node": "^24.8.1",
+    "@typescript-eslint/eslint-plugin": "^8.46.1",
+    "conventional-changelog-conventionalcommits": "^9.1.0",
+    "eslint": "^9.38.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.4",
+    "globstar": "^1.0.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-jsdoc": "^1.3.3",
+    "prettier-plugin-packagejson": "^2.5.19",
+    "prettier-plugin-sh": "^0.18.0",
+    "prettier-plugin-sort-json": "^4.1.1",
+    "pretty-quick": "^4.2.2",
+    "semantic-release": "^25.0.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "packageManager": "pnpm@10.6.2",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=10"
+  },
+  "volta": {
+    "node": "22.12.0",
+    "pnpm": "10.14.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "configs/eslint.js",
+    "provenance": true
+  }
+}

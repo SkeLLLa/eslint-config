@@ -1,3 +1,9 @@
+## [1.0.12](https://github.com/SkeLLLa/lint-config/compare/v1.0.11...v1.0.12) (2025-10-20)
+
+### 🛠 Fixes
+
+* root dir ([b5f02b5](https://github.com/SkeLLLa/lint-config/commit/b5f02b5f892e2461bcb735dc634cb39702e64261))
+
 ## [1.0.11](https://github.com/SkeLLLa/lint-config/compare/v1.0.10...v1.0.11) (2025-10-20)
 
 ### 🛠 Fixes

@@ -17,11 +17,11 @@ export default {
   endOfLine: 'lf',
   printWidth: 80,
   plugins: [
-    'prettier-plugin-packagejson',
-    'prettier-plugin-jsdoc',
-    'prettier-plugin-sort-json',
-    '@ianvs/prettier-plugin-sort-imports',
-    'prettier-plugin-sh',
+    import.meta.resolve('prettier-plugin-packagejson'),
+    import.meta.resolve('prettier-plugin-jsdoc'),
+    import.meta.resolve('prettier-plugin-sort-json'),
+    import.meta.resolve('@ianvs/prettier-plugin-sort-imports'),
+    import.meta.resolve('prettier-plugin-sh'),
   ],
   importOrder: [
     '<BUILTIN_MODULES>', // Node.js built-in modules

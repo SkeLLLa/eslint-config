@@ -1,3 +1,9 @@
+## [1.0.15](https://github.com/SkeLLLa/lint-config/compare/v1.0.14...v1.0.15) (2025-10-20)
+
+### 🛠 Fixes
+
+* typescript version ([7f0475e](https://github.com/SkeLLLa/lint-config/commit/7f0475eaf861cd4ae631aa66e847ba1213c6583f))
+
 ## [1.0.14](https://github.com/SkeLLLa/lint-config/compare/v1.0.13...v1.0.14) (2025-10-20)
 
 ### 🛠 Fixes

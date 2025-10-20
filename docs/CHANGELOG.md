@@ -1,3 +1,9 @@
+## [1.0.11](https://github.com/SkeLLLa/lint-config/compare/v1.0.10...v1.0.11) (2025-10-20)
+
+### 🛠 Fixes
+
+* npm bump ([c62b2f4](https://github.com/SkeLLLa/lint-config/commit/c62b2f4954b9bdb5ff78eb4dfadcff9402560e27))
+
 ## [1.0.10](https://github.com/SkeLLLa/lint-config/compare/v1.0.9...v1.0.10) (2025-10-20)
 
 ### 🛠 Fixes

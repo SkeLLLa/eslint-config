@@ -1,3 +1,18 @@
+## [1.0.3](https://github.com/SkeLLLa/lint-config/compare/v1.0.2...v1.0.3) (2025-10-20)
+
+### 🧾 Other
+
+* reenable provenance ([0bfee7d](https://github.com/SkeLLLa/lint-config/commit/0bfee7dde42c9ce097163ad29a4853b6b223482e))
+* temp disable provenance ([02b0349](https://github.com/SkeLLLa/lint-config/commit/02b034964a000e670544b5f95a79178cccbddd2d))
+
+### 🛠 Fixes
+
+* remove github npm ([c850a8a](https://github.com/SkeLLLa/lint-config/commit/c850a8afeae2ac90bb86f60e5971808f9e25648a))
+
+### 📔 Docs
+
+* update read,e ([f2cf5e9](https://github.com/SkeLLLa/lint-config/commit/f2cf5e900140d1d5a945700d920e971a4ccdad2f))
+
 ## [1.0.2](https://github.com/SkeLLLa/lint-config/compare/v1.0.1...v1.0.2) (2025-10-20)
 
 ### 🛠 Fixes

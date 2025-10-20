@@ -3,6 +3,9 @@ name: release
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
+  # Enable GitHub Actions debug logging
+  ACTIONS_STEP_DEBUG: true
+  ACTIONS_RUNNER_DEBUG: true
 
 on:
   push:
@@ -95,13 +98,12 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --reporter=verbose
       - name: Build
-        run: pnpm build
+        run: pnpm build --reporter=verbose
       - name: Semantic Release
-        run: pnpm run release
+        run: pnpm run release --verbose
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # NPM_AUTH_TOKEN: ${{ secrets.GH_NPM_TOKEN }}
+          # Enable semantic-release debug output
+          DEBUG: semantic-release:*

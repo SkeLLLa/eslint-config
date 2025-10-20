@@ -1,3 +1,9 @@
+## [1.0.16](https://github.com/SkeLLLa/lint-config/compare/v1.0.15...v1.0.16) (2025-10-20)
+
+### 🛠 Fixes
+
+* rules ([690c2a8](https://github.com/SkeLLLa/lint-config/commit/690c2a86d6b506683d56328ff69f816ec768d808))
+
 ## [1.0.15](https://github.com/SkeLLLa/lint-config/compare/v1.0.14...v1.0.15) (2025-10-20)
 
 ### 🛠 Fixes

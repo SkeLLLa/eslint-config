@@ -1,4 +1,3 @@
-import { resolve } from 'node:path';
 import eslint from '@eslint/js';
 import { flatConfigs as importX } from 'eslint-plugin-import-x';
 import prettier from 'eslint-plugin-prettier';
@@ -11,8 +10,8 @@ import {
   plugin as tsPlugin,
 } from 'typescript-eslint';
 
-// Resolve tsconfig.json from the consumer's project directory
-const project = resolve(process.cwd(), 'tsconfig.json');
+const project = 'tsconfig.json';
+const tsconfigRootDir = process.cwd();
 
 /**
  * Shared ESLint configuration for TypeScript projects
@@ -63,6 +62,7 @@ const config = /** @type import('eslint/rules') */ (
         parser: tsParser,
         parserOptions: {
           project,
+          tsconfigRootDir,
           createDefaultProgram: true,
         },
         globals: {

@@ -13,6 +13,10 @@ on:
       - master
       - next
 
+permissions:
+  id-token: write # Required for OIDC
+  contents: read
+
 jobs:
   verify:
     name: Verify
@@ -98,11 +102,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
       - name: Install dependencies
-        run: pnpm install --reporter=verbose
+        run: pnpm install
       - name: Build
-        run: pnpm build --reporter=verbose
+        run: pnpm build
       - name: Semantic Release
-        run: pnpm run release --verbose
+        run: pnpm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # Enable semantic-release debug output

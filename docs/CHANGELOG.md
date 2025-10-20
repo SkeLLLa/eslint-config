@@ -1,3 +1,9 @@
+## [1.0.6](https://github.com/SkeLLLa/lint-config/compare/v1.0.5...v1.0.6) (2025-10-20)
+
+### 🛠 Fixes
+
+* stupid npm oidc ([9b684e5](https://github.com/SkeLLLa/lint-config/commit/9b684e529046d4c61978ea3ca053c25fb0d83995))
+
 ## [1.0.5](https://github.com/SkeLLLa/lint-config/compare/v1.0.4...v1.0.5) (2025-10-20)
 
 ### 🛠 Fixes

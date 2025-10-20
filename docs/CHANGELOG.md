@@ -1,3 +1,9 @@
+## [1.0.4](https://github.com/SkeLLLa/lint-config/compare/v1.0.3...v1.0.4) (2025-10-20)
+
+### 🛠 Fixes
+
+* installation ([b16de3b](https://github.com/SkeLLLa/lint-config/commit/b16de3ba498c2980c6633204f16f4d1ae095ec30))
+
 ## [1.0.3](https://github.com/SkeLLLa/lint-config/compare/v1.0.2...v1.0.3) (2025-10-20)
 
 ### 🧾 Other

@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/SkeLLLa/lint-config/compare/v1.0.1...v1.0.2) (2025-10-20)
+
+### 🛠 Fixes
+
+* use node auth token ([4b5af04](https://github.com/SkeLLLa/lint-config/commit/4b5af04d166fe4aafc8f0779db093855cd5eca96))
+
 ## [1.0.1](https://github.com/SkeLLLa/lint-config/compare/v1.0.0...v1.0.1) (2025-10-20)
 
 ### 🛠 Fixes

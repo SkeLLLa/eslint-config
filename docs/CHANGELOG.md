@@ -1,3 +1,9 @@
+## [1.0.10](https://github.com/SkeLLLa/lint-config/compare/v1.0.9...v1.0.10) (2025-10-20)
+
+### 🛠 Fixes
+
+* oidc ([6ff0d7d](https://github.com/SkeLLLa/lint-config/commit/6ff0d7d27c3aac645caafa6e53076277b25eef95))
+
 ## [1.0.9](https://github.com/SkeLLLa/lint-config/compare/v1.0.8...v1.0.9) (2025-10-20)
 
 ### 🛠 Fixes

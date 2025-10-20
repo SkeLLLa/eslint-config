@@ -1,3 +1,9 @@
+## [1.0.7](https://github.com/SkeLLLa/lint-config/compare/v1.0.6...v1.0.7) (2025-10-20)
+
+### 🛠 Fixes
+
+* rebuild ([4a96a6f](https://github.com/SkeLLLa/lint-config/commit/4a96a6f8bb0e67cc4b91d4bf544bd677c9a73d0e))
+
 ## [1.0.6](https://github.com/SkeLLLa/lint-config/compare/v1.0.5...v1.0.6) (2025-10-20)
 
 ### 🛠 Fixes

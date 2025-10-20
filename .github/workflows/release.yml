@@ -15,14 +15,17 @@ on:
 
 permissions:
   id-token: write # Required for OIDC
-  contents: read
+  contents: write # to be able to publish a GitHub release
+  issues: write # to be able to comment on released issues
+  pull-requests: write # to be able to comment on released pull requests
+  packages: write
+  attestations: read
+  checks: write
 
 jobs:
   verify:
     name: Verify
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write # to enable use of OIDC for npm provenance
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js
@@ -70,14 +73,6 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     needs: verify
-    permissions:
-      contents: write # to be able to publish a GitHub release
-      issues: write # to be able to comment on released issues
-      pull-requests: write # to be able to comment on released pull requests
-      id-token: write # to enable use of OIDC for npm provenance
-      packages: write
-      attestations: write
-      checks: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -109,5 +104,3 @@ jobs:
         run: pnpm run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Enable semantic-release debug output
-          DEBUG: semantic-release:*

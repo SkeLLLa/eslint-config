@@ -1,3 +1,9 @@
+## [1.0.5](https://github.com/SkeLLLa/lint-config/compare/v1.0.4...v1.0.5) (2025-10-20)
+
+### 🛠 Fixes
+
+* publish config ([6a6e105](https://github.com/SkeLLLa/lint-config/commit/6a6e1058ec3c51226ea3b83d12ff009415b7851a))
+
 ## [1.0.4](https://github.com/SkeLLLa/lint-config/compare/v1.0.3...v1.0.4) (2025-10-20)
 
 ### 🛠 Fixes

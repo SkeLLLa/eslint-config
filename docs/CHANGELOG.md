@@ -1,3 +1,9 @@
+## [1.0.14](https://github.com/SkeLLLa/lint-config/compare/v1.0.13...v1.0.14) (2025-10-20)
+
+### 🛠 Fixes
+
+* prettier ([1a8d079](https://github.com/SkeLLLa/lint-config/commit/1a8d079cf2265bd4ef2f78db9e271784172d2ccb))
+
 ## [1.0.13](https://github.com/SkeLLLa/lint-config/compare/v1.0.12...v1.0.13) (2025-10-20)
 
 ### 🛠 Fixes

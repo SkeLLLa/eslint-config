@@ -109,7 +109,6 @@
   "publishConfig": {
     "access": "public",
     "main": "configs/eslint.js",
-    "provenance": true,
-    "registry": "https://npm.pkg.github.com/"
+    "provenance": true
   }
 }

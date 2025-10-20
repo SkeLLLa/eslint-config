@@ -13,38 +13,6 @@ A comprehensive, opinionated ESLint configuration for TypeScript projects with P
 
 ## Installation
 
-This package is published to the GitHub npm registry. You need to configure your package manager to use the GitHub registry for the `@skellla` scope.
-
-### Configure Registry
-
-First, configure your package manager to use the GitHub npm registry for packages in the `@skellla` scope:
-
-**For npm:**
-
-```bash
-npm config set @skellla:registry https://npm.pkg.github.com
-```
-
-**For pnpm:**
-
-```bash
-pnpm config set @skellla:registry https://npm.pkg.github.com
-```
-
-**For yarn:**
-
-```bash
-yarn config set @skellla:registry https://npm.pkg.github.com
-```
-
-Alternatively, you can add this to your `.npmrc` file in your project root:
-
-```ini
-@skellla:registry=https://npm.pkg.github.com
-```
-
-### Install Package
-
 ```bash
 npm install --save-dev @skellla/lint-config eslint prettier typescript
 # or

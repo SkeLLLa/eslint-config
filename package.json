@@ -109,6 +109,6 @@
   "publishConfig": {
     "access": "public",
     "main": "configs/eslint.js",
-    "provenance": true
+    "provenance": false
   }
 }

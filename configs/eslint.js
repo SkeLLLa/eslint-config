@@ -78,7 +78,6 @@ const config = /** @type import('eslint/rules') */ (
       },
       rules: {
         'import-x/no-unresolved': 'error',
-
         'new-cap': [
           'error',
           {
@@ -86,17 +85,9 @@ const config = /** @type import('eslint/rules') */ (
             capIsNewExceptionPattern: '^Type\\.',
           },
         ],
-
-        'require-jsdoc': 'off',
-        'valid-jsdoc': 'off',
         'tsdoc/syntax': 'error',
         'prettier/prettier': 'error',
-        '@typescript-eslint/require-await': 'off',
-        '@typescript-eslint/no-unsafe-member-access': 'off',
-        '@typescript-eslint/no-unsafe-call': 'off',
         '@typescript-eslint/consistent-type-exports': 'error',
-        '@typescript-eslint/no-extraneous-class': 'off',
-        '@typescript-eslint/no-empty-object-type': 'off',
       },
     },
 
@@ -109,7 +100,18 @@ const config = /** @type import('eslint/rules') */ (
       files: ['**/*.ts', '**/*.tsx'],
       ...cfg,
     })),
-
+    {
+      files: ['**/*.ts', '**/*.tsx'],
+      rules: {
+        'require-jsdoc': 'off',
+        'valid-jsdoc': 'off',
+        '@typescript-eslint/no-extraneous-class': 'off',
+        '@typescript-eslint/no-empty-object-type': 'off',
+        '@typescript-eslint/require-await': 'off',
+        '@typescript-eslint/no-unsafe-member-access': 'off',
+        '@typescript-eslint/no-unsafe-call': 'off',
+      },
+    },
     // JavaScript-specific configuration
     {
       files: ['**/*.js', '**/*.mjs', '**/*.cjs'],
@@ -120,6 +122,8 @@ const config = /** @type import('eslint/rules') */ (
         },
       },
       rules: {
+        'require-jsdoc': 'off',
+        'valid-jsdoc': 'off',
         '@typescript-eslint/no-require-imports': 'off',
       },
     },

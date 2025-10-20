@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/SkeLLLa/lint-config/compare/v1.0.0...v1.0.1) (2025-10-20)
+
+### 🛠 Fixes
+
+* try npm token ([f8de3d6](https://github.com/SkeLLLa/lint-config/commit/f8de3d608cf9a976f20f34732c74649be2f8333c))
+
 ## 1.0.0 (2025-10-20)
 
 ### 🛠 Fixes

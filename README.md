@@ -1,4 +1,4 @@
-# @no-esm/lint-config
+# @skellla/lint-config
 
 A comprehensive, opinionated ESLint configuration for TypeScript projects with Prettier integration.
 
@@ -13,12 +13,44 @@ A comprehensive, opinionated ESLint configuration for TypeScript projects with P
 
 ## Installation
 
+This package is published to the GitHub npm registry. You need to configure your package manager to use the GitHub registry for the `@skellla` scope.
+
+### Configure Registry
+
+First, configure your package manager to use the GitHub npm registry for packages in the `@skellla` scope:
+
+**For npm:**
+
 ```bash
-npm install --save-dev @no-esm/lint-config eslint prettier typescript
+npm config set @skellla:registry https://npm.pkg.github.com
+```
+
+**For pnpm:**
+
+```bash
+pnpm config set @skellla:registry https://npm.pkg.github.com
+```
+
+**For yarn:**
+
+```bash
+yarn config set @skellla:registry https://npm.pkg.github.com
+```
+
+Alternatively, you can add this to your `.npmrc` file in your project root:
+
+```ini
+@skellla:registry=https://npm.pkg.github.com
+```
+
+### Install Package
+
+```bash
+npm install --save-dev @skellla/lint-config eslint prettier typescript
 # or
-pnpm add -D @no-esm/lint-config eslint prettier typescript
+pnpm add -D @skellla/lint-config eslint prettier typescript
 # or
-yarn add -D @no-esm/lint-config eslint prettier typescript
+yarn add -D @skellla/lint-config eslint prettier typescript
 ```
 
 ## Usage
@@ -29,7 +61,7 @@ Create an `eslint.config.js` file in your project root:
 
 ```javascript
 // Option 1: Import the main config (default export)
-import sharedConfig from '@no-esm/lint-config';
+import sharedConfig from '@skellla/lint-config';
 
 export default [
   ...sharedConfig,
@@ -44,7 +76,7 @@ export default [
 
 ```javascript
 // Option 2: Import the eslint config explicitly
-import eslintConfig from '@no-esm/lint-config/eslint';
+import eslintConfig from '@skellla/lint-config/eslint';
 
 export default [
   ...eslintConfig,
@@ -62,7 +94,7 @@ export default [
 Create a `prettier.config.js` file in your project root:
 
 ```javascript
-import prettierConfig from '@no-esm/lint-config/prettier';
+import prettierConfig from '@skellla/lint-config/prettier';
 
 export default prettierConfig;
 ```
@@ -70,7 +102,7 @@ export default prettierConfig;
 Or extend it with your own settings:
 
 ```javascript
-import prettierConfig from '@no-esm/lint-config/prettier';
+import prettierConfig from '@skellla/lint-config/prettier';
 
 export default {
   ...prettierConfig,
@@ -82,7 +114,7 @@ export default {
 ### With custom configurations
 
 ```javascript
-import sharedConfig from '@no-esm/lint-config';
+import sharedConfig from '@skellla/lint-config';
 
 export default [
   ...sharedConfig,

@@ -1,3 +1,9 @@
+## [1.0.13](https://github.com/SkeLLLa/lint-config/compare/v1.0.12...v1.0.13) (2025-10-20)
+
+### 🛠 Fixes
+
+* dependencies ([739f898](https://github.com/SkeLLLa/lint-config/commit/739f898b1d571dbb1efa9ff7d3882b0327922eeb))
+
 ## [1.0.12](https://github.com/SkeLLLa/lint-config/compare/v1.0.11...v1.0.12) (2025-10-20)
 
 ### 🛠 Fixes

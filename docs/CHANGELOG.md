@@ -1,3 +1,9 @@
+## [1.0.8](https://github.com/SkeLLLa/lint-config/compare/v1.0.7...v1.0.8) (2025-10-20)
+
+### 🛠 Fixes
+
+* debug fcking oidc ([9ec4e26](https://github.com/SkeLLLa/lint-config/commit/9ec4e26b64cc7bd1181b75f238109829e5c32a98))
+
 ## [1.0.7](https://github.com/SkeLLLa/lint-config/compare/v1.0.6...v1.0.7) (2025-10-20)
 
 ### 🛠 Fixes

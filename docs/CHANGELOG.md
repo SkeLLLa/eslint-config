@@ -1,3 +1,13 @@
+## [1.0.17](https://github.com/SkeLLLa/lint-config/compare/v1.0.16...v1.0.17) (2025-11-17)
+
+### 🛠 Fixes
+
+* improve vscode plugin resolution ([6c53848](https://github.com/SkeLLLa/lint-config/commit/6c5384864ac0d02da3f57acde420b6cc06759f37))
+
+### 🧾 Other
+
+* ci refactoring ([2089e47](https://github.com/SkeLLLa/lint-config/commit/2089e47939ce7442b8f38907edad6f2c1f725f13))
+
 ## [1.0.16](https://github.com/SkeLLLa/lint-config/compare/v1.0.15...v1.0.16) (2025-10-20)
 
 ### 🛠 Fixes
